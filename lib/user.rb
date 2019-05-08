@@ -16,6 +16,6 @@ class User
 
   def joke_by_id(id)
     @id == id
-  end  
+  end
 
 end
