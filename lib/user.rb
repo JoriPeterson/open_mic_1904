@@ -3,11 +3,19 @@ class User
 
   def initialize(name)
     @name = name
-    @jokes = jokes
+    @jokes = []
   end
 
   def learn(joke)
-    @jokes = joke
+    @jokes << joke
   end
+
+  def tell(user, joke)
+    user.learn(joke)
+  end
+
+  def joke_by_id(id)
+    @id == id
+  end  
 
 end
